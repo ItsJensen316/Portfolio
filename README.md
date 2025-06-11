@@ -3,7 +3,7 @@
 Welcome to my interactive, modern, and responsive personal portfolio site! This project showcases my technical skills, projects, experience, and interests using a clean UI and smooth animations.
 
 ## 🚀 Live Demo
-👉 [Visit My Portfolio](https://itsjensen316.github.io/) _(replace with your actual GitHub Pages URL)_
+👉 [Visit My Portfolio](https://itsjensen316.github.io/Portfolio/)
 
 ---
 
