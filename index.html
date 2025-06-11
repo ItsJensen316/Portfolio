@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Jensen's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <style>
+        .company-logo {
+            display: block;
+            margin: 15px 0;
+            width: 500px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: floatY 3s ease-in-out infinite;
+        }
+
+        @keyframes floatY {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+        }
+    </style>
+</head>
+<body class="container">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li class="mode-selector">
+                <select id="mode">
+                    <option value="light">Light Mode</option>
+                    <option value="dark">Dark Mode</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+    <h1 style="text-align:center">Welcome to My Portfolio</h1>
+
+    <div class="box animated fade-in">
+        <h2 class="portfolio">Areas of Interest</h2>
+        <p>Data Science, Machine Learning, and Software Development.</p>
+        <lord-icon
+            src="https://cdn.lordicon.com/nocovwne.json"
+            trigger="loop"
+            delay="200"
+            colors="primary:#121331,secondary:#08a88a"
+            style="width:80px;height:80px">
+        </lord-icon>
+    </div>
+
+    <div class="box-container">
+        <div class="box animated fade-in">
+            <h2 class="portfolio">Technical Skills</h2>
+            <p><b>Programming Languages:</b> Python, R, C, C++</p>
+            <p><b>Web Development:</b> HTML, CSS, JavaScript</p>
+            <p><b>Database:</b> SQL, MongoDB</p>
+            <p><b>Tools:</b> Git, Tableau, Power BI</p>
+        </div>
+        <div class="box animated fade-in">
+            <h2 class="portfolio">Projects</h2>
+            <p><a class="projects" href="https://drive.google.com/file/d/1oolf2V2ATmHIe9HHmYZsOjFjyG8TtBfr/view">1.</a> Employee Management System (Python, MySQL)</p>
+            <p><a class="projects" href="https://github.com/ItsJensen316/2D-Multiplayer-Racing">2.</a> 2D Multiplayer Racing Game (Python, Pygame)</p>
+            <p><a class="projects" href="https://github.com/ItsJensen316/Pygame-Project">3.</a> Side-scrolling Platformer (Python, Pygame)</p>
+            <p>4. Faculty Upscaling System (React.js, Node.js, MongoDB)</p>
+        </div>
+    </div>
+
+    <div class="box animated fade-in">
+        <h2 class="portfolio">Experience</h2>
+        <p><b>Intern, Rajiv Gandhi Centre for Biotechnology</b> (Dec 2024 – May 2025)</p>
+        <img src="Company.png" alt="Company Logo" class="company-logo animated-logo">
+        <p>Performed transcriptomic data analysis and drug-target prediction using scripting, statistical modeling, and network-based algorithms.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
