@@ -1,4 +1,4 @@
-# Portfolio 2.0
+# Portfolio 3.0
 
 Personal portfolio built with React, TypeScript and Vite, featuring software projects, research, skills and professional experience. Includes responsive dark/light themes and detailed project case studies.
 
