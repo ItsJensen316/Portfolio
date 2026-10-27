@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink, Route, Routes, useLocation } from 'react-router-dom';
 import { Github, Linkedin, Mail, Moon, Sun, Menu, X, ArrowUpRight } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { profile } from './data/content';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
@@ -80,5 +81,6 @@ export default function App() {
       </Routes>
     </main>
     <Footer />
+    <Analytics />
     </>;
 }
