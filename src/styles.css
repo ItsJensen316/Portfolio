@@ -159,7 +159,7 @@ p  {
   font-size:13px
 }
 
-.mobile-menu,.nav-mobile-projects  {
+.mobile-menu,.nav-mobile-projects,.nav-mobile-resume  {
   display:none!important
 }
 
@@ -1198,7 +1198,7 @@ p  {
     font-size:15px
   }
 
-  .mobile-menu,.nav-mobile-projects  {
+  .mobile-menu,.nav-mobile-projects,.nav-mobile-resume  {
     display:grid!important
   }
 
@@ -1207,18 +1207,56 @@ p  {
   }
 
   .hero-inner  {
-    grid-template-columns:1fr;
-    gap:42px;
-    padding-top:64px
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    align-items: stretch;
+    padding-top: 36px;
   }
 
   .hero-copy  {
-    order:2
+    display: contents;
+  }
+
+  .hero-hello  {
+    order: 1;
+    margin: 0 0 5px;
+  }
+
+  .hero h1  {
+    order: 2;
+    margin: 0 0 24px;
+  }
+
+  .hero h2  {
+    order: 3;
+    margin: 0 0 16px;
+  }
+
+  .hero-summary  {
+    order: 4;
+    margin: 0;
   }
 
   .portrait-shell  {
-    order:1;
-    max-width:290px
+    order: 5;
+    max-width: 290px;
+    margin-top: 34px;
+    margin-bottom: 34px;
+  }
+
+  .hero .status  {
+    order: 6;
+    justify-self: start;
+  }
+
+  .hero-buttons  {
+    order: 7;
+    margin-top: 24px;
+  }
+
+  .hero-socials  {
+    order: 8;
+    margin-top: 30px;
   }
 
   .portrait-frame  {

@@ -17,7 +17,7 @@ function Header() {
     <div className="wrap nav-inner">
       <Link to="/" className="brand" aria-label="Home">JJ<span>.</span>
       </Link>
-      <nav className={open ? 'nav-list opened' : 'nav-list'} aria-label="Main navigation">{nav.map(n => <Link key={n.hash} onClick={() => setOpen(false)} to={'/#' + n.hash}>{n.title}</Link>)}<NavLink className="nav-mobile-projects" to="/projects">All Projects</NavLink>
+      <nav className={open ? 'nav-list opened' : 'nav-list'} aria-label="Main navigation">{nav.map(n => <Link key={n.hash} onClick={() => setOpen(false)} to={'/#' + n.hash}>{n.title}</Link>)}<NavLink className="nav-mobile-projects" to="/projects">All Projects</NavLink><a className="nav-mobile-resume" href="/documents/Jensen_Jose_Resume.pdf" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>Resume <ArrowUpRight size={16}/></a>
       </nav>
       <div className="nav-actions">
         <button className="icon-btn" aria-label={theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'} onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>{theme === 'dark' ? <Sun size={19}/> : <Moon size={19}/>}</button>
